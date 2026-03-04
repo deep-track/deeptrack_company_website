@@ -1,9 +1,9 @@
 import { NextRequest } from 'next/server';
-import { MongoClient } from 'mongodb';
-import sgMail from '@sendgrid/mail';
-
-sgMail.setApiKey(process.env.SENDGRID_API_KEY!);
-const MONGODB_URI = process.env.MONGODB_URI!;
+// import { MongoClient } from 'mongodb';
+// import sgMail from '@sendgrid/mail';
+import clientPromise from "@/lib/mongoDB";
+// sgMail.setApiKey(process.env.SENDGRID_API_KEY!);
+// const MONGODB_URI = process.env.MONGODB_URI!;
 const MONGODB_DB = process.env.MONGODB_DB!;
 // const ADMIN_EMAIL = process.env.ADMIN_EMAIL!;
 // const FROM_EMAIL = process.env.SENDGRID_FROM_EMAIL!;
@@ -18,12 +18,12 @@ export async function POST(req: NextRequest) {
 
 		// Save to MongoDB
 		try {
-			const client = await MongoClient.connect(MONGODB_URI);
+			const client = await clientPromise;
 			const db = client.db(MONGODB_DB);
 			await db.collection('book_demo_submissions').insertOne({
 				fullName, email, phoneNumber, company, date: new Date()
 			});
-			client.close();
+			// client.close();
 		} catch (error) {
 			return new Response(JSON.stringify({ message: 'Error saving to database', error }), { status: 500 });
 		}

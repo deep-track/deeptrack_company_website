@@ -54,7 +54,7 @@ export default function WaitlistForm() {
         <label className="text-sm text-gray-800">Full name</label>
         <input
           type="text"
-          placeholder="John Kamau"
+          placeholder="John Doe"
           className="w-full bg-transparent border-b border-gray-400 focus:outline-none focus:border-black py-2 text-gray-900"
           value={fullName}
           onChange={(e) => setFullName(e.target.value)}
@@ -80,7 +80,7 @@ export default function WaitlistForm() {
         <label className="text-sm text-gray-800">Phone Number</label>
         <input
           type="text"
-          placeholder="+254 744 567 890"
+          placeholder="+1 744 567 890"
           className="w-full bg-transparent border-b border-gray-400 focus:outline-none focus:border-black py-2 text-gray-900"
           value={phoneNumber}
           onChange={(e) => setPhoneNumber(e.target.value)}
