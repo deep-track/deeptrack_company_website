@@ -90,7 +90,7 @@ export default function TestimonialsSection() {
 
           <div className="md:col-span-2">
             <TypingText
-              text="“Before Deeptrack, verifying digital media and identity signals required multiple vendors and manual review queues. Our fraud team was overwhelmed and response times were hurting customer trust. Within weeks of deploying Deeptrack, we automated over 70% of our high risk media verification workflows. What used to take hours of forensic review now happens in seconds with audit-ready reports. It’s not just detection it’s defensible, enterprise-grade verification we can trust.”"
+              text="“Before Deeptrack, verifying digital media and identity signals required multiple vendors and manual review queues. Our fraud team was overwhelmed and response times were hurting customer trust. Within weeks of deploying Deeptrack, we automated over 70% of our high risk media verification workflows. What used to take hours of forensic review now happens in seconds with audit ready reports. It’s not just detection it’s defensible, enterprise-grade verification we can trust.”"
               className="text-lg text-gray-700 leading-relaxed"
             />
 
