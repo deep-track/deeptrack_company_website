@@ -3,8 +3,11 @@
 import Link from 'next/link';
 import { ShieldCheck, Search, Cpu, Scale, EyeOff } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Navbar } from '@/components/landingPage/navs/navBar';
 export default function AboutDeeptrack() {
   return (
+    <>
+    <Navbar/>
     <main className="px-4 sm:px-6 md:px-10 lg:px-16 py-16 max-w-7xl mx-auto space-y-24 text-black">
 
       {/* ------------------------------------------------ */}
@@ -167,5 +170,6 @@ export default function AboutDeeptrack() {
       </section>
 
     </main>
+    </>
   );
 }

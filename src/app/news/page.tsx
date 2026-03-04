@@ -41,6 +41,10 @@ export default function News() {
         setEmail("");
         
         window.open(process.env.NEXT_PUBLIC_AIRTABLE_LINK, "_blank");
+        // const airtableLink = process.env.NEXT_PUBLIC_AIRTABLE_LINK;
+        // if (airtableLink) {
+        //   window.open(airtableLink, "_blank");
+        // }
       } else {
         setLoading(false);
         setError(data.message || "Submission failed. Try again.");

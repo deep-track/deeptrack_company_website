@@ -1,5 +1,6 @@
 'use client';
 
+import { Navbar } from '@/components/landingPage/navs/navBar';
 import { motion, Variants } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -77,6 +78,8 @@ const cardVariants: Variants = {
 
 export default function LeadershipPage() {
   return (
+    <>
+        <Navbar/>
     <main className="bg-white text-gray-900">
 
       {/* Hero Section */}
@@ -316,5 +319,6 @@ export default function LeadershipPage() {
       </section>
 
     </main >
+    </>
   );
 }

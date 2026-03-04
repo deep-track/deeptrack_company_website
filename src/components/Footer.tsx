@@ -56,27 +56,32 @@ export default function FinalCTASection() {
         <div className="mt-22 text-sm text-gray-400">
           {/* Pages row */}
           <div className="py-4">
-            <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-              <span className="text-white">Pages</span>
-              {/* Trailing line */}
+            {/* <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+              <span className="text-white">" "</span>
+              
               <div className="flex-1 h-px bg-white/10" />
               <div className="flex flex-wrap gap-x-6 gap-y-2">
                 <Link href="/">Home</Link>
                 <Link href="/#industries">Use cases</Link>
-                <Link href="/about">About</Link>
+                <Link href="/test-files/fileAbout">About Us</Link>
                 <Link href="/career">Careers</Link>
                 <Link href="/contact">Contact</Link>
-                <Link href="/test-files/fileAbout">Test about</Link>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Legal row */}
           <div className="py-4">
             <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-              <span className="text-white">Legal</span>
-              {/* Trailing line */}
-              <div className="flex-1 h-px bg-white/10" />
+
+              {/* <div className="flex-1 h-px bg-white/10" /> */}
+              <div className="flex flex-wrap gap-x-6 gap-y-2">
+                <Link href="/">Home</Link>
+                <Link href="/#industries">Use cases</Link>
+                <Link href="/test-files/fileAbout">About Us</Link>
+                <Link href="/career">Careers</Link>
+                <Link href="/contact">Contact</Link>
+              </div>
               <div className="flex flex-wrap gap-x-6 gap-y-2">
                 <Link href="https://app.eu.vanta.com/deeptrack.io/trust/ykzpe8x33wwv9mki8rjv61">Deeptrack&apos;s Trust Center</Link>
                 {/* <Link href="/legal/privacy-policy">Privacy Policy</Link>

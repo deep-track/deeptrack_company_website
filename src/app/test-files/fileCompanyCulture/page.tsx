@@ -3,6 +3,7 @@
 import { motion, Variants } from 'framer-motion';
 import Image from 'next/image';
 import { ShieldCheck, Scale, Lock, Cpu } from 'lucide-react';
+import { Navbar } from '@/components/landingPage/navs/navBar';
 
 const leadership = [
   {
@@ -81,7 +82,8 @@ const cardVariants: Variants = {
 
 export default function CompanyCulture() {
   return (
-
+<>
+    <Navbar/>
     <main className="px-4 sm:px-6 md:px-10 lg:px-16 py-16 max-w-7xl mx-auto space-y-24 text-black">
 
       {/* ------------------------------------------------ */}
@@ -243,5 +245,6 @@ export default function CompanyCulture() {
       </section>
 
     </main>
+    </>
   );
 }

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { MongoClient } from "mongodb";
-import sgMail from "@sendgrid/mail";
+// import sgMail from "@sendgrid/mail";
 
 // sgMail.setApiKey(process.env.SENDGRID_API_KEY!);
 

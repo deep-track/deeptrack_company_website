@@ -1,5 +1,6 @@
 'use client';
 
+import { Navbar } from '@/components/landingPage/navs/navBar';
 import { motion } from 'framer-motion';
 import {
   ShieldCheck,
@@ -71,6 +72,8 @@ const platformSystems = [
 
 export default function TechnologiesPage() {
   return (
+    <>
+        <Navbar/>
     <main className="bg-white text-gray-900">
 
       {/* Hero */}
@@ -222,5 +225,6 @@ export default function TechnologiesPage() {
       </section>
 
     </main>
+    </>
   );
 }
