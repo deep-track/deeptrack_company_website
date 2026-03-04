@@ -44,7 +44,7 @@ export default function FinalCTASection() {
             </Link>
 
             <Link
-              href="/about"
+              href="/test-files/fileAbout"
               className="rounded-md bg-white/10 px-4 py-2 text-sm text-white hover:bg-white/20"
             >
               About us
